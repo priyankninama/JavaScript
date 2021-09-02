@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color:rgb(10, 74, 78);
+}
+#div1{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #191919;
+    text-align: center;
+    border-radius: 25px;
+}
+#div1 h1{
+    color:whitesmoke;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#div1 input[type="text"],#div1 input[type="password"]{
+    border-radius: 0;
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    text-transform: capitalize;
+}
+#lbluser, #lblpass{
+    color: whitesmoke;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 20px;
+}
+#div1 input[type="text"]:focus,#div1 input[type="password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+
+#btn{
+    border: 0;
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid #027448;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: #027448;
+}
