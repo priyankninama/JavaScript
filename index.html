@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        :root {
+            --blue: #1e90ff;
+        }
+
+        p {
+            color: var(--blue);
+        }
+    </style>
+    <script type="text/javascript">
+        setimage = () => {
+            document.getElementById('img1').src = "https://d2skuhm0vrry40.cloudfront.net/2021/articles/2021-05-05-11-45/detective-pikachu-star-pours-water-on-those-sequel-plans-1620211502511.jpg/EG11/thumbnail/732x412/format/jpg/quality/50"
+            document.getElementById('p1').innerHTML = "Mouse over"
+        }
+        setold = () => {
+            document.getElementById('img1').src = "https://i.ytimg.com/vi/1roy4o4tqQM/maxresdefault.jpg"
+            document.getElementById('p1').innerHTML = "Mouse Out"
+        }
+    </script>
+</head>
+
+
+<body>
+    <img id="img1" onmouseover="setimage()" onmouseout="setold()"
+        src="https://i.ytimg.com/vi/1roy4o4tqQM/maxresdefault.jpg" alt="This is image" height=300px, height=30px />
+    <p id="p1"></p>
+</body>
+
+</html>
