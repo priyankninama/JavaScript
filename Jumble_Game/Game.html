@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumble Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(115deg, yellow, green);
+            background-size: cover;
+        }
+
+        .container {
+            height: 500px;
+            width: 500px;
+            /* background: linear-gradient(green, yellow); */
+            border-radius: 20px;
+        }
+
+        .first {
+            padding: 30px;
+        }
+
+        .score {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .jumble {
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            text-transform: uppercase;
+            text-align: center;
+            font-family: 'Segoe UI', Verdana, sans-serif;
+        }
+
+        .userinput {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .inp {
+            width: 100%;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: 1px solid gray;
+            text-indent: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        #btn {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            height: 50px;
+            margin-left: 50px;
+            width: 75%;
+            background-color: rgb(95, 189, 233);
+            border-radius: 25px;
+            color: black;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        #btn:hover {
+            background-color: rgb(8, 140, 216);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="first">
+            <div class="score">
+                <h4>Score =</h4>
+                <h4 id="score"> 0</h4>
+
+            </div>
+
+            <div class="jumble">
+                <h3 id="i1"></h3>
+            </div>
+
+            <div class="userinput"></div>
+            <input type="text" class="inp" id="inp" placeholder="Correct Word">
+
+            <br><br>
+            <button onclick='checkanswer()' id="btn">Submit</button>
+        </div>
+
+    </div>
+    <script src="Game.js"></script>
+</body>
